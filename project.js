@@ -52,9 +52,13 @@ tombol.addEventListener('submit',function(e){
         
         Baru.appendChild(namaBaru);
 
-        simpan.addEventListener('click', function(e){
+        simpan.addEventListener('click', function(){
+            if(namaBaru.value == ''){
+                alert('Masukkan Nama Tugas!');
+            }else{
             nama.innerHTML = namaBaru.value;
-            namaBaru.replaceWith(nama);         
+            namaBaru.replaceWith(nama)   
+            }      
         })
     })
     hapus.addEventListener('click',function(){
