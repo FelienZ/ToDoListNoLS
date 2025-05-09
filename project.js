@@ -51,12 +51,10 @@ tombol.addEventListener('submit',function(e){
         const namaBaru = document.createElement('input');
         
         Baru.appendChild(namaBaru);
-        nama.replaceWith(Baru);  
 
         simpan.addEventListener('click', function(e){
-            const display = document.createElement('td');
-            display.innerHTML = namaBaru.value;
-            namaBaru.replaceWith(display)            
+            nama.innerHTML = namaBaru.value;
+            namaBaru.replaceWith(nama);         
         })
     })
     hapus.addEventListener('click',function(){
