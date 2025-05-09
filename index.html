@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background: url('pic/denim.png');
+            font-family: Cal Sans;
+        }
+        body h1{
+            color: white;
+            text-align: center;
+            padding-top: 5vh;
+            text-decoration: underline;
+        }
+        .form-input{
+            background-color: lightgray;
+            max-width: 700px;
+            margin: 5vh auto;
+            padding: 5px 0px 15px 0px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        form{
+            max-width: 600px;
+            background-color: whitesmoke;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+            border-radius: 9px;
+            font-family: sans-serif;
+            border: 1px solid gray;
+        }
+        form input, form button{
+            max-width: 70%;
+            margin-bottom: 4px;
+            overflow: hidden;
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        form button{
+            background-color: #0275d8;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            border: 1px solid lightgray;
+
+        }
+        form input{
+            width: 500px;
+            text-align: center;
+            text-decoration: underline 1px solid gray;
+        }
+        .daftar{
+            color: black;
+            background-color: whitesmoke;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid gray;
+            max-width: 600px;
+            margin: 0 auto;
+            min-height: 300px;
+        }
+        .daftar table{
+            max-width: 100%;
+            border-radius: 3px;
+        }
+        .daftar table th{
+            width: 400px;
+            padding: 5px;
+            border-radius: 3px;
+            color: #292b2c;
+            border: 1px solid gray;
+            text-decoration: underline;
+        }
+        .daftar table td{
+            width: 400px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 3px;
+            border: 1px solid gray;
+            
+        }
+        .daftar table button{
+            margin-right: 5px;
+            box-sizing: border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Comfortaa:wght@700&family=IBM+Plex+Sans+Devanagari:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="form-input">
+        <form action="">
+            <input type="text" placeholder="Masukkan Nama Tugas" id="nama">
+            <button type="submit" id="tambah">Submit</button>
+        </form>
+        <div class="daftar">
+            <table >
+                <tr>
+                    <th>Nama Tugas</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
